@@ -30,6 +30,13 @@ public class Main {
         System.out.println(challenge4.replaceAll(" ", "_"));
         System.out.println(challenge4.replaceAll("\\s", "_"));
 
+        String challenge5 = "aaabcccccccccdddefffg";
+        System.out.println(challenge5.matches("[abcdefg]+"));
+        System.out.println(challenge5.matches("[a-g]+"));
+
+
+
+
 
 
 
