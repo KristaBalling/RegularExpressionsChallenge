@@ -49,6 +49,15 @@ public class Main {
         }
 
 
+        String challenge9 = "abcd.135\tuvqz.7\ttzik.999\n";
+        Pattern pattern9 = Pattern.compile("[A-Za-z]+\\.(\\d+)\\s");
+        Matcher matcher9 = pattern9.matcher(challenge9);
+        while(matcher8.find()) {
+            System.out.println("Occurrence: " + matcher8.group(1));
+        }
+
+
+
 
 
 
