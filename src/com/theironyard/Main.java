@@ -77,6 +77,9 @@ public class Main {
             System.out.println("Occurrence: " + matcher11a.group(1));
         }
 
+        String challenge12 = "11111";
+        System.out.println(challenge12.matches("^\\d{5}$"));
+
 
 
 
