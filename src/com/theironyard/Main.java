@@ -63,6 +63,20 @@ public class Main {
             System.out.println("Occurrence: " + matcher10.start(1) + " end = " + (matcher10.end(1)-1));
         }
 
+        String challenge11 = "{0, 2}, {0, 5}, {1, 3}, {2, 4}";
+        Pattern pattern11 = Pattern.compile("\\{(.+?)\\}");
+        Matcher matcher11 = pattern11.matcher(challenge11);
+        while(matcher11.find()) {
+            System.out.println("Occurrence: " + matcher11.group(1));
+        }
+
+        String challenge11a = "{0, 2}, {0, 5}, {1, 3}, {2, 4} {x, y}, {2, 4}, {11, 12}";
+        Pattern pattern11a = Pattern.compile("\\{(\\d+,\\d+)\\}");
+        Matcher matcher11a = pattern11a.matcher(challenge11a);
+        while(matcher11a.find()) {
+            System.out.println("Occurrence: " + matcher11a.group(1));
+        }
+
 
 
 
